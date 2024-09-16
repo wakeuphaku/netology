@@ -1,0 +1,128 @@
+.footer {
+    background-image: url('../../images/footer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+
+
+
+    &__block {
+        display: flex;
+        background-image: url('../../images/footerblock.png');
+        width: 560px;
+        height: 534px;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        gap: 140px;
+        margin-left: 43px;
+        color: #fff;
+        margin-top: 47px;
+    }
+
+    &__title {
+        width: 352px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 30px;
+        color: #fff;
+        margin: 0;
+        letter-spacing: -0.5px;
+    }
+
+
+
+    &__number {
+        font-size: 70px;
+        font-weight: 600;
+        line-height: 50px;
+        margin: 0;
+    }
+
+    &__text {
+        width: 449px;
+        font-size: 18px;
+        line-height: 25px;
+        font-weight: 400;
+        opacity: .8;
+        color: #fff;
+        margin-left: 43px;
+        margin-bottom: 53px;
+        letter-spacing: -0.4px;
+        margin-top: 29px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        background-image: url('../../images/footer_mobile.png');
+        background-size: contain;
+        width: 100vw;
+        min-height: 529px;
+
+        &__block {
+            display: flex;
+            background-image: url('../../images/footerblock_mobile.png');
+            width: 301px;
+            height: 330px;
+            background-position: center;
+            background-repeat: no-repeat;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 31px;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__top {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            text-align: center;
+            gap: 12px;
+            margin: 0;
+            margin-top: 65px;
+
+        }
+
+        &__title {
+            width: 230px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 25px;
+            color: #fff;
+            margin: 0;
+        }
+
+
+        &__number {
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: -2px;
+
+        }
+
+        &__text {
+            margin: 0;
+            width: 291px;
+            font-size: 12px;
+            line-height: 16px;
+            opacity: .8;
+            margin-bottom: 37px;
+            letter-spacing: -0.1px;
+        }
+    }
+
+}
